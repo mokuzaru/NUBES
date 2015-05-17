@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/selector_detalle"
+    >
+
+    <ImageView
+        android:id="@+id/imgImagen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/img_marker_bano3" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgImagen"
+        android:layout_toRightOf="@+id/imgImagen"
+        android:textSize="15dp"
+        android:textColor="#15B747"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="txtNombre" />
+
+    <TextView
+        android:id="@+id/txtDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/txtNombre"
+        android:layout_below="@+id/txtNombre"
+        android:autoLink="all"
+        android:textColor="#252525"
+        android:textSize="10dp"
+        android:text="contenido contenido contenido contenidocontenido contenido contenidocontenido  asda asd asd as dasd contenido contenido contenido contenido a asda" />
+
+    <TextView
+        android:id="@+id/txtDistancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#15B747"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="Titulo"
+        android:layout_alignBottom="@+id/imgImagen"
+        android:layout_alignLeft="@+id/txtDireccion"
+        android:layout_alignStart="@+id/txtDireccion" />
+
+    <RatingBar
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/txtDireccion" />
+
+
+</RelativeLayout>
